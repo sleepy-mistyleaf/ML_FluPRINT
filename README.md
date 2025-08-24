@@ -1,10 +1,9 @@
 # ML_FluPRINT
-Using interpretable machine learning to explore immune responses to flu vaccines
-
+Evaluating Random Forest and XGBoost Models for Predicting High and Low Responders to Influenza Vaccination
 
 ## Project Description
 
-Seasonal influenza remains a major global health challenge despite decades of vaccination efforts. The effectiveness of flu vaccines varies significantly from year to year due to the virus’s high mutation rate, posing a serious threat to vulnerable populations.
+Seasonal flu remains a major global health challenge despite decades of vaccination efforts. The effectiveness of flu vaccines varies significantly from year to year due to the virus’s high mutation rate, posing a serious threat to vulnerable populations.
 
 Understanding what contributes to a strong immune response is crucial for improving vaccine design, but traditional immunology studies have been hindered by small sample sizes and limited analytical tools. With the emergence of large-scale immunoprofiling datasets like FluPRINT (1), which contains harmonised immune data from over 740 individuals across multiple clinical studies, there is an opportunity to apply ML to uncover predictors of vaccine response. These predictors or "biomarkers" can help us understand what drives high response, and apply the insights to improve vaccine design.
 
@@ -25,7 +24,10 @@ Key challenges with FluPRINT:
 - Class imbalance between high and low responders
 - Multimodal data types
 
-## Methodology:
+## Approach
+We used a two-pronged approach to tackle this problem:
+- Prediction: We built and trained two powerful machine learning models, Random Forest and XGBoost, to predict vaccine response.
+- Interpretation: To avoid the "black box" problem, we used a tool called SHAP to understand why our models made their predictions. This allows us to identify the most influential biomarkers.
 
 ## How to run
 This code provides a guide on how databases, such as FluPRINT, can be utilised for vaccine response analysis. It can be downloaded and edited as needed. The raw data has not been uploaded here but can be easily accessed via the link - https://fluprint.com/#/database-access. 
