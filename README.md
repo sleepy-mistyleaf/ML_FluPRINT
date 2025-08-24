@@ -7,7 +7,7 @@ Seasonal flu remains a major global health challenge despite decades of vaccinat
 
 Understanding what contributes to a strong immune response is crucial for improving vaccine design, but traditional immunology studies have been hindered by small sample sizes and limited analytical tools. With the emergence of large-scale immunoprofiling datasets like FluPRINT (1), which contains harmonised immune data from over 740 individuals across multiple clinical studies, there is an opportunity to apply ML to uncover predictors of vaccine response. These predictors or "biomarkers" can help us understand what drives high response, and apply the insights to improve vaccine design.
 
-This project uses ML models (Random Forests and XGBoost) to predict vaccine responsiveness based on cellular, molecular, and serological features from the FluPRINT dataset. We address challenges such as class imbalance, high dimensionality, and missing data through preprocessing and apply SHAP-based interpretability to gain biological insights from model predictions. The goal is to identify potential biomarkers that could improve future vaccine development and personalisation.
+This project uses ML models (Random Forests and XGBoost) to predict vaccine responsiveness based on cellular, molecular, and serological features from the FluPRINT dataset. We address challenges such as class imbalance, high dimensionality, and missing data through preprocessing and apply SHAP-based interpretability to gain biological insights from model predictions. The primary goal is to develop a framework that enables us to classify patients as low or high responders. Additionally, we can use this framework to identify potential biomarkers that could improve future vaccine development and personalisation.
 
 ## Dataset: FluPRINT
 
@@ -25,9 +25,9 @@ Key challenges with FluPRINT:
 - Multimodal data types
 
 ## Approach
-We used a two-pronged approach to tackle this problem:
-- Prediction: We built and trained two powerful machine learning models, Random Forest and XGBoost, to predict vaccine response.
-- Interpretation: To avoid the "black box" problem, we used a tool called SHAP to understand why our models made their predictions. This allows us to identify the most influential biomarkers.
+We used a two-pronged approach to tackle this:
+- Prediction: We built and trained two ML models, Random Forest and XGBoost, to predict vaccine response.
+- Interpretation: To avoid the "black box" problem, we used a tool called SHAP to understand why our models made their predictions.
 
 ## How to run
 This code provides a guide on how databases, such as FluPRINT, can be utilised for vaccine response analysis. It can be downloaded and edited as needed. The raw data has not been uploaded here but can be easily accessed via the link - https://fluprint.com/#/database-access. 
