@@ -1,6 +1,6 @@
 # ML_FluPRINT
-Evaluating Random Forest and XGBoost Models for Predicting High and Low Responders to Influenza Vaccination
-
+# Evaluating Random Forest and XGBoost Models for Predicting High and Low Responders to Influenza Vaccination
+---
 ## Project Description
 
 Seasonal flu remains a major global health challenge despite decades of vaccination efforts. The effectiveness of flu vaccines varies significantly from year to year due to the virus’s high mutation rate, posing a serious threat to vulnerable populations.
